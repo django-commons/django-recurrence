@@ -300,7 +300,7 @@ msgstr "Octubre"
 
 #: base.py:1143 choices.py:37
 msgid "November"
-msgstr "Noviembre "
+msgstr "Noviembre"
 
 #: base.py:1143 choices.py:38
 msgid "December"
