@@ -62,3 +62,15 @@ def test_rule_to_text_translates_may():
         assert rule.to_text(short=True) == 'jährlich, jeden Mai'
     with translation.override('fr'):
         assert rule.to_text() == 'annuel, chaque mai'
+
+
+def test_rule_to_text_in_spanish():
+    with translation.override('es'):
+        assert Rule(
+            recurrence.WEEKLY,
+            count=1
+        ).to_text() == 'semanalmente, ocurre una vez'
+        assert Rule(
+            recurrence.YEARLY,
+            bymonth=[5, 11]
+        ).to_text() == 'anualmente, cada Mayo, Noviembre'
