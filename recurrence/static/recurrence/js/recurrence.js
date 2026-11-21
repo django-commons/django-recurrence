@@ -985,6 +985,10 @@ var gettext = gettext || function(msgid) {
     }
 };
 
+var pgettext = pgettext || function(context, msgid) {
+    return gettext(msgid);
+};
+
 var interpolate = interpolate || function(fmt, obj, named) {
     if (named) {
         return fmt.replace(/%\(\w+\)s/g, function(match) {
