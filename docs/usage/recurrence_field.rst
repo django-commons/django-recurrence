@@ -20,6 +20,11 @@ particular recurrence pattern.
    every date this year for a club that runs every Wednesday), you'll
    want to use ``between``.
 
+.. note::
+
+   The examples on this page use dates at midnight. If your
+   occurrences have a time of day, read :ref:`timezones` first.
+
 ``between`` takes two dates (the start and end date), and returns a list
 of ``datetime`` objects matching the recurrence pattern between those
 dates. It is used like this (using the ``Course`` model from above):
