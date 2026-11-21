@@ -22,7 +22,8 @@ Unreleased
 - Add support for Django 6.1 (#305).
   [Azd325]
 - Add support for Python 3.14 and 3.15.
-- Drop support for Python 3.10 and Django 4.2 (EOL).
+- Require Python 3.11 or later and Django 5.2 or later. Python 3.9
+  and 3.10 and Django 4.0 to 5.1 are no longer supported.
 - Run the tests with tox against every supported Django version
   and remove the PDM lock file and development tooling.
 - Build with setuptools instead of PDM and take the version from
