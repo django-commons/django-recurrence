@@ -5,6 +5,23 @@ Changes
 Unreleased
 ----------
 
+- Add ``include_dtend`` to ``Recurrence``, ``deserialize`` and
+  ``RecurrenceField``. Set it to ``False`` to leave ``dtend`` out of
+  the occurrences unless the pattern matches it (#232, #237).
+  [LucasGrugru]
+- Send a ``change`` event from the form field when the widget
+  changes the recurrence value (#172).
+  [sheyabernstein]
+- Fix the monthly day grid not showing saved negative days as
+  selected, which also dropped them on the next edit (#221, #303).
+  [bensynapse]
+- Set ``default_auto_field`` in the app configuration, so that
+  projects with a different ``DEFAULT_AUTO_FIELD`` do not get a new
+  migration for ``recurrence`` (#302).
+  [vogelier]
+- Add support for Django 6.1 (#305).
+  [Azd325]
+- Add support for Python 3.14 and 3.15.
 - Drop support for Python 3.10 and Django 4.2 (EOL).
 - Run the tests with tox against every supported Django version
   and remove the PDM lock file and development tooling.
@@ -12,11 +29,6 @@ Unreleased
   the git tag.
 - Publish releases from Django Commons with PyPI trusted publishing.
 - Move project links from Jazzband to Django Commons.
-- Add support for Python 3.14.
-- Add support for Python 3.15 and Django 6.1.
-- Add ``include_dtend`` to ``Recurrence``, ``deserialize`` and
-  ``RecurrenceField``. Set it to ``False`` to leave ``dtend`` out of
-  the occurrences unless the pattern matches it (#232).
 
 1.14 (2025-12-19)
 -----------------
