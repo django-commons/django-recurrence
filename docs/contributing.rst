@@ -12,6 +12,14 @@ request. Feel free to `file an issue
 <https://github.com/django-commons/django-recurrence/issues>`_ if
 you want help getting set up.
 
+Using LLMs and coding agents
+----------------------------
+
+LLMs may be used to assist with contributions, but issues and pull
+requests need to be reviewed and verified by a human being before they
+are submitted. The full guidelines are in `AGENTS.md
+<https://github.com/django-commons/django-recurrence/blob/master/AGENTS.md>`_.
+
 Running the tests
 -----------------
 
