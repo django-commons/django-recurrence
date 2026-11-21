@@ -27,9 +27,9 @@ Then, make sure ``recurrence`` is in your ``INSTALLED_APPS`` setting:
 Supported Django and Python versions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Currently, django-recurrence supports Python 3.6 and Python 3.7.
+Currently, django-recurrence supports Python 3.11, 3.12, and 3.13.
 
-django-recurrence works with Django 1.11, 2.1 and 2.2.
+django-recurrence is currently tested with Django 5.2, 6.0, and 6.1.
 
 Set up internationalization
 ---------------------------
@@ -48,7 +48,7 @@ following to your project ``urls.py`` file:
 .. code-block:: python
 
     import django
-    from django.conf.urls import url
+    from django.urls import re_path as url
     from django.views.i18n import JavaScriptCatalog
 
     # Your normal URLs here...

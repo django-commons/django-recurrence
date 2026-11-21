@@ -1,14 +1,14 @@
 coverage:
-	py.test --cov-report html --cov-report term-missing --cov recurrence
+	pytest
 
 test:
-	py.test
+	pytest
 
 testall:
 	tox
 
 build: clean
-	python setup.py sdist bdist_wheel
+	python -m build
 
 clean:
 	rm -rf dist/*

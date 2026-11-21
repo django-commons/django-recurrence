@@ -32,7 +32,7 @@ msgstr "semanalmente"
 
 #: base.py:1087
 msgid "daily"
-msgstr "d"
+msgstr "diario"
 
 #: base.py:1088
 msgid "hourly"
@@ -369,7 +369,7 @@ msgstr "Anualmente"
 
 #: choices.py:31
 msgid "May"
-msgstr "May"
+msgstr "Mayo"
 
 #: choices.py:44
 msgid "Inclusion"
