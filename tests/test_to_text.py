@@ -74,3 +74,11 @@ def test_rule_to_text_in_spanish():
             recurrence.YEARLY,
             bymonth=[5, 11]
         ).to_text() == 'anualmente, cada Mayo, Noviembre'
+
+
+def test_rule_to_text_separator_in_brazilian_portuguese():
+    with translation.override('pt-br'):
+        assert Rule(
+            recurrence.WEEKLY,
+            count=1
+        ).to_text() == 'semanalmente, que ocorre uma vez'
