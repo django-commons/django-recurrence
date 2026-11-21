@@ -2,8 +2,8 @@
 Changes
 =======
 
-Unreleased
-----------
+1.15 (2026-11-21)
+-----------------
 
 - Add ``include_dtend`` to ``Recurrence``, ``deserialize`` and
   ``RecurrenceField``. Set it to ``False`` to leave ``dtend`` out of
