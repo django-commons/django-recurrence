@@ -30,10 +30,6 @@ django-recurrence
    :target: https://github.com/jazzband/django-recurrence/actions
    :alt: GitHub actions
 
-.. image:: https://codecov.io/gh/jazzband/django-recurrence/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/jazzband/django-recurrence
-   :alt: Coverage
-
 
 django-recurrence is a utility for working with recurring dates in Django.
 
