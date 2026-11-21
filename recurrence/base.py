@@ -338,7 +338,7 @@ class Recurrence:
         return type(self).__bool__(self)
 
     def __eq__(self, other):
-        if type(other) != type(self):
+        if type(other) is not type(self):
             return False
         if not isinstance(other, Recurrence):
             raise TypeError('object to compare must be Recurrence object')
