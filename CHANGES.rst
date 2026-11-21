@@ -12,6 +12,7 @@ Unreleased
   the git tag.
 - Publish releases from Django Commons with PyPI trusted publishing.
 - Move project links from Jazzband to Django Commons.
+- Add support for Python 3.14.
 
 1.14 (2025-12-19)
 -----------------
