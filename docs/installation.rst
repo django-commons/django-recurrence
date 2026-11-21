@@ -34,35 +34,37 @@ django-recurrence is currently tested with Django 5.2, 6.0, and 6.1.
 Set up internationalization
 ---------------------------
 
-.. note::
-
-    This step is currently mandatory, but may be bypassed with an
-    extra bit of javascript. See :issue:`47` for details.
-
-Using a translation of django-recurrence other than
-``en`` requires that django-recurrence's JavaScript can
-access the translation strings. This is handled with Django's built
-in ``javascript_catalog`` view, which you must install by adding the
-following to your project ``urls.py`` file:
+The widget is shown in English by default. To show it in another
+language, django-recurrence's JavaScript needs the translation
+strings. They are served by Django's built in ``JavaScriptCatalog``
+view, which you install by adding the following to your project
+``urls.py`` file:
 
 .. code-block:: python
 
-    import django
-    from django.urls import re_path as url
+    from django.urls import path
     from django.views.i18n import JavaScriptCatalog
 
     # Your normal URLs here...
 
-    # If you already have a js_info_dict dictionary, just add
-    # 'recurrence' to the existing 'packages' tuple.
-    js_info_dict = {
-        'packages': ('recurrence', ),
-    }
-
-    # jsi18n can be anything you like here
+    # If you already have a JavaScriptCatalog view that lists its
+    # packages, just add 'recurrence' to them.
     urlpatterns += [
-        url(r'^jsi18n/$', JavaScriptCatalog.as_view(), js_info_dict),
+        # jsi18n/ can be anything you like here
+        path(
+            'jsi18n/',
+            JavaScriptCatalog.as_view(packages=['recurrence']),
+            name='javascript-catalog',
+        ),
     ]
+
+``{{ form.media }}`` finds this view and loads the catalog before the
+widget scripts. If you include the scripts by hand, load the catalog
+first:
+
+.. code-block:: html+django
+
+    <script src="{% url 'javascript-catalog' %}"></script>
 
 
 Configure static files
