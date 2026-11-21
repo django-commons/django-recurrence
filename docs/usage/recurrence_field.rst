@@ -112,6 +112,22 @@ for instantiating ``Recurrence`` objects directly:
        )
     )
 
+In the same way, ``dtend`` is always the last occurrence in your list
+if specified, whether or not your recurrence pattern matches it. To
+switch this off, set ``include_dtend=False`` as an argument for the
+``RecurrenceField``, or for a ``Recurrence`` object that you
+instantiate directly:
+
+.. code-block:: python
+    :emphasize-lines: 3
+
+    class Course(models.Model):
+        title = models.CharField(max_length=200)
+        recurrences = RecurrenceField(include_dtend=False)
+
+With this change any ``dtend`` value will only be an occurrence if
+it matches the pattern specified in ``recurrences``.
+
 .. _occurrences:
 
 Getting all occurrences
