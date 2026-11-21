@@ -13,6 +13,9 @@ Unreleased
   later (#218).
 - Fix the ``JavaScriptCatalog`` example in the installation docs.
 - Translate May in ``Rule.to_text()``.
+- Translate the abbreviation of May on its own, so that it can differ
+  from the full name, as in Spanish, Basque, Hungarian and Brazilian
+  Portuguese (#35).
 - Fix Spanish texts on the server, such as form errors and frequency
   names, being shown in English.
 - Fix the list separator in Brazilian Portuguese rule texts.

@@ -164,6 +164,11 @@ msgstr "مارس"
 msgid "Apr"
 msgstr "أبريل"
 
+#: base.py:1141
+msgctxt "abbreviated month name"
+msgid "May"
+msgstr "مايو"
+
 #: recurrence/base.py:1128
 msgid "Jun"
 msgstr "يونيو"

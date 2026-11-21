@@ -1085,7 +1085,7 @@ recurrence.display.months = [
 ];
 recurrence.display.months_short = [
     gettext('Jan'), gettext('Feb'), gettext('Mar'),
-    gettext('Apr'), pgettext('month name', 'May'), gettext('Jun'),
+    gettext('Apr'), pgettext('abbreviated month name', 'May'), gettext('Jun'),
     gettext('Jul'), gettext('Aug'), gettext('Sep'),
     gettext('Oct'), gettext('Nov'), gettext('Dec')
 ];

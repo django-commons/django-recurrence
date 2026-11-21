@@ -461,6 +461,11 @@ msgstr "مارس"
 msgid "Apr"
 msgstr "أبريل"
 
+#: static/recurrence/js/recurrence.js:1088
+msgctxt "abbreviated month name"
+msgid "May"
+msgstr "مايو"
+
 #: recurrence/static/recurrence/js/recurrence.js:1086
 msgid "Jun"
 msgstr "يونيو"

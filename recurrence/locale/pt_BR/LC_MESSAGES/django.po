@@ -163,6 +163,11 @@ msgstr "Mar"
 msgid "Apr"
 msgstr "Abr"
 
+#: base.py:1141
+msgctxt "abbreviated month name"
+msgid "May"
+msgstr "Mai"
+
 #: base.py:1116
 msgid "Jun"
 msgstr "Jun"
@@ -368,7 +373,7 @@ msgstr "Anualmente"
 
 #: choices.py:31
 msgid "May"
-msgstr "Mai"
+msgstr "Maio"
 
 #: choices.py:44
 msgid "Inclusion"

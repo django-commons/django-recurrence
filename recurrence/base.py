@@ -18,7 +18,7 @@ from dateutil import tz
 
 from django.utils import dateformat
 from django.utils.timezone import get_current_timezone, is_aware, is_naive, make_aware
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext as _, pgettext
 
 from recurrence import exceptions
 from recurrence import settings
@@ -1138,7 +1138,8 @@ def rule_to_text(rule, short=False):
         )
         months_display = (
             _('Jan'), _('Feb'), _('Mar'), _('Apr'),
-            _('May'), _('Jun'), _('Jul'), _('Aug'),
+            pgettext('abbreviated month name', 'May'),
+            _('Jun'), _('Jul'), _('Aug'),
             _('Sep'), _('Oct'), _('Nov'), _('Dec'),
         )
 
