@@ -92,7 +92,13 @@ jobs:
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ github.token }}
+        # A release made in the GitHub UI already exists for the tag;
+        # a tag pushed with git gets a draft release
         run: >-
+          gh release view
+          "${GITHUB_REF_NAME}"
+          --repo '${{ github.repository }}'
+          ||
           gh release create
           "${GITHUB_REF_NAME}"
           --repo '${{ github.repository }}'
@@ -108,3 +114,4 @@ jobs:
           gh release upload
           "${GITHUB_REF_NAME}" dist/**
           --repo '${{ github.repository }}'
+          --clobber
