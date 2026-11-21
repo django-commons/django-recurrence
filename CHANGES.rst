@@ -11,6 +11,7 @@ Unreleased
 - Build with setuptools instead of PDM and take the version from
   the git tag.
 - Publish releases from Django Commons with PyPI trusted publishing.
+- Move project links from Jazzband to Django Commons.
 
 1.14 (2025-12-19)
 -----------------
