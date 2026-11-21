@@ -163,6 +163,11 @@ msgstr "Mar"
 msgid "Apr"
 msgstr "Apr"
 
+#: base.py:1141
+msgctxt "abbreviated month name"
+msgid "May"
+msgstr "Máj"
+
 #: base.py:1116
 msgid "Jun"
 msgstr "Jún"

@@ -82,3 +82,10 @@ def test_rule_to_text_separator_in_brazilian_portuguese():
             recurrence.WEEKLY,
             count=1
         ).to_text() == 'semanalmente, que ocorre uma vez'
+
+
+def test_rule_to_text_abbreviates_may():
+    rule = Rule(recurrence.YEARLY, bymonth=[5])
+    with translation.override('hu'):
+        assert rule.to_text() == 'évente, minden Május'
+        assert rule.to_text(short=True) == 'évente, minden Máj'

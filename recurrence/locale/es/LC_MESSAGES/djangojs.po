@@ -460,6 +460,11 @@ msgstr ""
 msgid "Apr"
 msgstr "Abr"
 
+#: static/recurrence/js/recurrence.js:1088
+msgctxt "abbreviated month name"
+msgid "May"
+msgstr "May"
+
 #: static/recurrence/js/recurrence.js:1094
 msgid "Jun"
 msgstr ""
