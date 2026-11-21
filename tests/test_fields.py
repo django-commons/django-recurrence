@@ -257,9 +257,9 @@ def test_include_dtend_from_object():
     )
 
     assert [occ for occ in limits.to_dateutil_rruleset(datetime(2015, 8, 2), datetime(2015, 8, 14))] == [
-       datetime(2015, 8, 2, 0, 0), datetime(2015, 8, 3, 0, 0), datetime(2015, 8, 10, 0, 0),
-       datetime(2015, 8, 14, 0, 0)
-   ]
+        datetime(2015, 8, 2, 0, 0), datetime(2015, 8, 3, 0, 0), datetime(2015, 8, 10, 0, 0),
+        datetime(2015, 8, 14, 0, 0)
+    ]
 
     limits = Recurrence(  # include_dtend=False (dtend is expected to not be included)
         include_dtend=False,
@@ -279,6 +279,7 @@ def test_include_dtend_from_object():
     assert [occ for occ in limits.to_dateutil_rruleset(datetime(2015, 8, 2), datetime(2015, 8, 14))] == [
         datetime(2015, 8, 3, 0, 0), datetime(2015, 8, 10, 0, 0)
     ]
+
 
 def test_none_fieldvalue():
     field = RecurrenceField()
