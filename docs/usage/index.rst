@@ -6,4 +6,5 @@ Usage
 
    getting_started
    recurrence_field
+   timezones
    api
