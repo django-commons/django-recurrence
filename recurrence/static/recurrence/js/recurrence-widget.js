@@ -580,7 +580,7 @@ recurrence.widget.Widget.prototype = {
         var currentVal = this.textarea.value;
         this.textarea.value = this.data.serialize();
         if (currentVal !== this.textarea.value) {
-            var event = new Event('change');
+            var event = new Event('change', {bubbles: true});
             this.textarea.dispatchEvent(event);
         }
     }
