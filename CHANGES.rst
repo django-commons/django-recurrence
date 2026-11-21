@@ -8,6 +8,8 @@ Unreleased
 - Drop support for Python 3.10 and Django 4.2 (EOL).
 - Run the tests with tox against every supported Django version
   and remove the PDM lock file and development tooling.
+- Build with setuptools instead of PDM and take the version from
+  the git tag.
 
 1.14 (2025-12-19)
 -----------------
