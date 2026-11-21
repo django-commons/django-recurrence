@@ -13,6 +13,7 @@ Unreleased
 - Publish releases from Django Commons with PyPI trusted publishing.
 - Move project links from Jazzband to Django Commons.
 - Add support for Python 3.14.
+- Add support for Python 3.15 and Django 6.1.
 - Add ``include_dtend`` to ``Recurrence``, ``deserialize`` and
   ``RecurrenceField``. Set it to ``False`` to leave ``dtend`` out of
   the occurrences unless the pattern matches it (#232).
