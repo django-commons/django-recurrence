@@ -10,6 +10,7 @@ Unreleased
   and remove the PDM lock file and development tooling.
 - Build with setuptools instead of PDM and take the version from
   the git tag.
+- Publish releases from Django Commons with PyPI trusted publishing.
 
 1.14 (2025-12-19)
 -----------------
