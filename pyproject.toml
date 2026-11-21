@@ -1,6 +1,6 @@
 [project]
 name = "django-recurrence"
-version = "1.14"
+dynamic = ["version"]
 description = "Django utility wrapping dateutil.rrule"
 authors = [
     {name = "Tamas Kemenczy", email = "tamas.kemenczy@gmail.com"},
@@ -12,7 +12,8 @@ dependencies = [
 ]
 requires-python = ">=3.11"
 readme = "README.rst"
-license = {text = "BSD"}
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: Plugins",
@@ -23,7 +24,6 @@ classifiers = [
     "Framework :: Django :: 6.0",
     "Framework :: Django :: 6.1",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -40,11 +40,7 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/jazzband/django-recurrence"
 [build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+requires = ["setuptools>=77", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
 
-[tool.pdm]
-distribution = true
-
-[tool.pdm.package-dir]
-recurrence = "recurrence"
+[tool.setuptools_scm]

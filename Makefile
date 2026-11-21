@@ -8,7 +8,7 @@ testall:
 	tox
 
 build: clean
-	python setup.py sdist bdist_wheel
+	python -m build
 
 clean:
 	rm -rf dist/*
