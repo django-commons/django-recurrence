@@ -27,7 +27,7 @@ Then, make sure ``recurrence`` is in your ``INSTALLED_APPS`` setting:
 Supported Django and Python versions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Currently, django-recurrence supports Python 3.11, 3.12, and 3.13.
+Currently, django-recurrence supports Python 3.11, 3.12, 3.13, 3.14, and 3.15.
 
 django-recurrence is currently tested with Django 5.2, 6.0, and 6.1.
 
