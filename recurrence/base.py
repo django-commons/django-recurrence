@@ -296,9 +296,9 @@ class Recurrence:
             Defines if `dtend` is included in the recurrence set as
             the last occurrence. With `include_dtend == True` it is
             both the ending point for recurrences and the last
-            recurrence in the set (according to the rfc2445 spec).
-            With `include_dtend == False` `dtend` is only the rule's
-            ending point like in python's `dateutil.rrule`.
+            recurrence in the set. With `include_dtend == False`
+            `dtend` is only the ending point, and an occurrence only
+            if a rule or a date matches it.
     """
     def __init__(
         self, dtstart=None, dtend=None, rrules=(), exrules=(),
