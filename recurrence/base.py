@@ -574,7 +574,7 @@ class Recurrence:
             rruleset.rdate(dtstart)
         for rdate in self.rdates:
             rdate = normalize_offset_awareness(rdate, dtstart)
-            if dtend is not None and rdate < dtend:
+            if dtend is not None and rdate <= dtend:
                 rruleset.rdate(rdate)
             elif not dtend:
                 rruleset.rdate(rdate)
@@ -584,6 +584,9 @@ class Recurrence:
         for exdate in self.exdates:
             exdate = normalize_offset_awareness(exdate, dtstart)
             if dtend is not None and exdate < dtend:
+                rruleset.exdate(exdate)
+            elif dtend is not None and exdate == dtend and not include_dtend:
+                # an included dtend is always an occurrence
                 rruleset.exdate(exdate)
             elif not dtend:
                 rruleset.exdate(exdate)
