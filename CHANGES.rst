@@ -2,6 +2,21 @@
 Changes
 =======
 
+Unreleased
+----------
+
+- Show the widget in English instead of failing with ``pgettext is
+  not defined`` when no JavaScript catalog is loaded (#218).
+- Load the translations of the widget with ``{{ form.media }}`` when
+  the URLconf has a ``JavaScriptCatalog`` view that serves
+  ``recurrence``. The lookup did not find any view on Django 2.0 or
+  later (#218).
+- Fix the ``JavaScriptCatalog`` example in the installation docs.
+- Translate May in ``Rule.to_text()``.
+- Fix Spanish texts on the server, such as form errors and frequency
+  names, being shown in English.
+- Fix the list separator in Brazilian Portuguese rule texts.
+
 1.15 (2026-11-21)
 -----------------
 
