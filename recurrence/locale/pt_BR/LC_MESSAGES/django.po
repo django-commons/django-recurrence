@@ -307,7 +307,7 @@ msgstr "Dezembro"
 
 #: base.py:1161 base.py:1178 base.py:1189 base.py:1202 base.py:1220
 msgid ", "
-msgstr ","
+msgstr ", "
 
 #: base.py:1167
 #, python-format
