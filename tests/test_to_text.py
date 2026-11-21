@@ -1,3 +1,5 @@
+from django.utils import translation
+
 from recurrence import Rule
 import recurrence
 
@@ -51,3 +53,12 @@ def test_rule_to_text_yearly_byday():
         recurrence.YEARLY,
         byday=[1, 3],
     ).to_text(True) == 'annually, on the Tue, Thu'
+
+
+def test_rule_to_text_translates_may():
+    rule = Rule(recurrence.YEARLY, bymonth=[5])
+    with translation.override('de'):
+        assert rule.to_text() == 'jährlich, jeden Mai'
+        assert rule.to_text(short=True) == 'jährlich, jeden Mai'
+    with translation.override('fr'):
+        assert rule.to_text() == 'annuel, chaque mai'
