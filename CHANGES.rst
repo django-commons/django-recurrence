@@ -2,8 +2,8 @@
 Changes
 =======
 
-Unreleased
-----------
+1.15.1 (2026-11-22)
+-------------------
 
 - Show the widget in English instead of failing with ``pgettext is
   not defined`` when no JavaScript catalog is loaded (#218).
