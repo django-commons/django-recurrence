@@ -19,6 +19,9 @@ Unreleased
 - Fix Spanish texts on the server, such as form errors and frequency
   names, being shown in English.
 - Fix the list separator in Brazilian Portuguese rule texts.
+- Document how time zones and daylight saving time are handled.
+- List the issue tracker and the changelog in the project URLs.
+- Add guidelines for using LLMs and coding agents.
 
 1.15 (2026-11-21)
 -----------------
